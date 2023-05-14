@@ -1,0 +1,12 @@
+VGA_gen.v
+pong.v
+pong_game_tb.v
+button.v
+shift_register.v
+osd.v
+pong_game.v
+osd_time_base.v
+character_memory.v
+score_register.v
+bcd_8bit_counter.v
+speed_generator.v

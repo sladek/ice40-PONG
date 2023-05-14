@@ -1,0 +1,89 @@
+
+icetime topological timing analysis report
+==========================================
+
+Info: max_span_hack is enabled: estimate is conservative.
+
+Report for critical path:
+-------------------------
+
+        lc40_8_11_5 (LogicCell40) [clk] -> lcout: 0.640 ns
+     0.640 ns net_15720 (vga.c_col[2])
+        odrv_8_11_15720_15504 (Odrv4) I -> O: 0.372 ns
+        t1670 (Span4Mux_h4) I -> O: 0.316 ns
+        t1672 (Span4Mux_v4) I -> O: 0.372 ns
+        t1671 (LocalMux) I -> O: 0.330 ns
+        inmux_4_8_9092_9130 (InMux) I -> O: 0.260 ns
+        lc40_4_8_6 (LogicCell40) in0 -> lcout: 0.449 ns
+     2.737 ns net_7076 ($abc$11349$auto$alumacc.cc:474:replace_alu$1023.BB[2])
+        odrv_4_8_7076_3067 (Odrv4) I -> O: 0.372 ns
+        t1041 (Span4Mux_v4) I -> O: 0.372 ns
+        t1040 (LocalMux) I -> O: 0.330 ns
+        inmux_1_6_2718_2733 (InMux) I -> O: 0.260 ns
+        t30 (CascadeMux) I -> O: 0.000 ns
+        lc40_1_6_1 (LogicCell40) in2 -> carryout: 0.231 ns
+     4.301 ns t31
+        lc40_1_6_2 (LogicCell40) carryin -> carryout: 0.126 ns
+     4.427 ns t33
+        lc40_1_6_3 (LogicCell40) carryin -> carryout: 0.126 ns
+     4.554 ns t35
+        lc40_1_6_4 (LogicCell40) carryin -> carryout: 0.126 ns
+     4.680 ns t37
+        lc40_1_6_5 (LogicCell40) carryin -> carryout: 0.126 ns
+     4.806 ns t39
+        lc40_1_6_6 (LogicCell40) carryin -> carryout: 0.126 ns
+     4.932 ns t41
+        lc40_1_6_7 (LogicCell40) carryin -> carryout: 0.126 ns
+     5.058 ns net_2766 ($auto$alumacc.cc:474:replace_alu$1023.C[9])
+        t43 (ICE_CARRY_IN_MUX) carryinitin -> carryinitout: 0.196 ns
+        lc40_1_7_0 (LogicCell40) carryin -> carryout: 0.126 ns
+     5.381 ns net_2859 ($abc$11349$auto$alumacc.cc:491:replace_alu$1025[9]$2)
+        inmux_1_7_2859_2869 (InMux) I -> O: 0.260 ns
+        lc40_1_7_1 (LogicCell40) in3 -> lcout: 0.316 ns
+     5.956 ns net_634 ($abc$11349$auto$alumacc.cc:491:replace_alu$1025[9])
+        odrv_1_7_634_1893 (Odrv12) I -> O: 0.540 ns
+        t743 (Span12Mux_h12) I -> O: 0.540 ns
+        t742 (LocalMux) I -> O: 0.330 ns
+        inmux_5_8_11170_11222 (InMux) I -> O: 0.260 ns
+        t226 (CascadeMux) I -> O: 0.000 ns
+        lc40_5_8_3 (LogicCell40) in2 -> lcout: 0.379 ns
+     8.004 ns net_9023 ($abc$11349$new_n446_)
+        odrv_5_8_9023_11278 (Odrv4) I -> O: 0.372 ns
+        t1141 (LocalMux) I -> O: 0.330 ns
+        inmux_5_9_11294_11334 (InMux) I -> O: 0.260 ns
+        lc40_5_9_1 (LogicCell40) in3 -> lcout: 0.316 ns
+     9.281 ns net_9144 ($abc$11349$new_n443_)
+        odrv_5_9_9144_11031 (Odrv4) I -> O: 0.372 ns
+        t1153 (LocalMux) I -> O: 0.330 ns
+        inmux_6_9_13404_13454 (InMux) I -> O: 0.260 ns
+        t301 (CascadeMux) I -> O: 0.000 ns
+        lc40_6_9_3 (LogicCell40) in2 -> lcout: 0.379 ns
+    10.620 ns net_11254 ($abc$11349$new_n649_)
+        t1303 (LocalMux) I -> O: 0.330 ns
+        inmux_6_8_13289_13337 (InMux) I -> O: 0.260 ns
+        t296 (CascadeMux) I -> O: 0.000 ns
+        lc40_6_8_4 (LogicCell40) in2 -> lcout: 0.379 ns
+    11.588 ns net_11132 (osd.increment_addr)
+        odrv_6_8_11132_11279 (Odrv4) I -> O: 0.372 ns
+        t1297 (Span4Mux_v4) I -> O: 0.372 ns
+        t1296 (LocalMux) I -> O: 0.330 ns
+        inmux_6_5_12934_12989 (ClkMux) I -> O: 0.309 ns
+    12.970 ns net_12989 (osd.increment_addr)
+        lc40_6_5_4 (LogicCell40) clk [setup]: 0.000 ns
+    12.970 ns net_10763 (osd.next_char_addr[0])
+
+Resolvable net names on path:
+     0.640 ns ..  2.288 ns vga.c_col[2]
+     2.737 ns ..  4.070 ns $abc$11349$auto$alumacc.cc:474:replace_alu$1023.BB[2]
+     5.058 ns ..  5.255 ns $auto$alumacc.cc:474:replace_alu$1023.C[9]
+     5.381 ns ..  5.641 ns $abc$11349$auto$alumacc.cc:491:replace_alu$1025[9]$2
+     5.956 ns ..  7.625 ns $abc$11349$auto$alumacc.cc:491:replace_alu$1025[9]
+     8.004 ns ..  8.965 ns $abc$11349$new_n446_
+     9.281 ns .. 10.241 ns $abc$11349$new_n443_
+    10.620 ns .. 11.209 ns $abc$11349$new_n649_
+    11.588 ns .. 12.970 ns osd.increment_addr
+                  lcout -> osd.next_char_addr[0]
+
+Total number of logic levels: 15
+Total path delay: 12.97 ns (77.10 MHz)
+

@@ -1,0 +1,6 @@
+read_verilog character_memory.v
+show -pause
+proc
+show -pause
+opt
+show -pause
